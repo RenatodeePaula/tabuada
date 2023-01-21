@@ -10,14 +10,14 @@ function gerar(){
     if (numero.value.length == 0){
         alert('Digite um número ')
 
-    } else{
+    } else {
+        tabuada.innerHTML = "Digite um número"
         numero = Number(numero.value) 
         for (let cont = 1; cont <= 10; cont++) {
             let item = document.createElement('option')
             item.text =  `${numero} * ${cont} = ${numero * cont}`
     
-            tabuada.appendChild(item)   
-    
+            tabuada.appendChild(item)       
         }    
 
     }
